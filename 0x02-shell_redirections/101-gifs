@@ -1,6 +1,2 @@
 #!/bin/bash
->>>>>>>HEAD
->>>>>>>HEAD
-find . -empty -printf "%f\n"
-find . -empty | ls -la
-find . -empty -printf "%f\n"
+find -type f -name "*.gif" | rev | cut -d "/" -f l | cut -d '.' -f 2- | rev
